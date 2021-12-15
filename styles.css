@@ -4,6 +4,7 @@ body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
     user-select: none;
+    box-sizing: border-box;
 }
 .main-container{
     display: flex;
@@ -12,10 +13,12 @@ body{
 }
 .row{
     display: flex;
+    justify-content: flex-start;
 }
 .display{
     background-color: black;
-    border: 1px white solid;
+    border: 2px white solid;
+    border-radius: 10px;
     width: 430px;
     height: 100px;
     color:white;
@@ -24,6 +27,7 @@ body{
     align-items: flex-end;
     font-size: 4em;
     margin:20px;
+    padding-right: 15px;
 }
 .column{
     background-color: darkgray;
@@ -34,7 +38,7 @@ body{
     justify-content: center;
     align-items: center;
     border: 1px white solid;
-    border-radius: 20px;
+    border-radius: 10px;
     margin:5px;
     font-size: 2em;
     cursor: pointer;
@@ -42,6 +46,9 @@ body{
 }
 .cero{
     width: 210px;
+}
+.clear{
+    width: 325px;
 }
 .operator{
     background-color: orange;
